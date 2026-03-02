@@ -21,6 +21,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+
 import com.example.birthdaycard.ui.theme.BirthdayCardTheme
 
 class MainActivity : ComponentActivity() {
@@ -34,7 +35,7 @@ class MainActivity : ComponentActivity() {
                 Surface(modifier = Modifier.fillMaxSize()) {
                     GreetingImage(
                         message = "Happy Birthday Sam!",
-                        from = "From Emma"
+                        from = "From Shashank"
                     )
                 }
             }
@@ -94,16 +95,16 @@ fun GreetingImage(message: String, from: String, modifier: Modifier = Modifier) 
         )
     }
 }
-
 /* -------------------- Preview -------------------- */
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun BirthdayCardPreview() {
     BirthdayCardTheme {
         GreetingImage(
             message = "Happy Birthday Sam!",
-            from = "From Emma"
+            from = "From Shashank"
         )
     }
 }
+
